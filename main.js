@@ -17,10 +17,8 @@ const avatarDate = document.querySelector(".avatar-date");
 avatarDate.textContent = `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
 
 const shareContainer = document.querySelector(".share-container");
-const shareBtns = document.querySelectorAll(".shareBtn");
+const shareBtn = document.querySelector(".shareBtn");
 
-shareBtns.forEach((shareBtn) => {
-  shareBtn.addEventListener("click", function () {
-    shareContainer.classList.toggle("share-container-toggle");
-  });
+shareBtn.addEventListener("click", function () {
+  shareContainer.classList.toggle("share-container-toggle");
 });

@@ -58,7 +58,7 @@ main {
 /* content */
 .content {
   width: 80%;
-  margin: 3em auto 1.5em;
+  margin: 3em auto 1em;
   display: flex;
   flex-direction: column;
   row-gap: 2em;
@@ -111,13 +111,14 @@ main {
   border: none;
   cursor: pointer;
   transition: all 0.3s;
+  z-index: 1;
 }
 
 .shareBtn:hover {
   background-color: var(--Desaturated-Dark-Blue);
 }
 
-.shareBtn:hover svg path {
+.shareBtn:hover path {
   fill: white;
 }
 
@@ -147,7 +148,6 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 
 .share h3 {
@@ -162,7 +162,7 @@ main {
   display: flex;
   align-items: center;
   column-gap: 1.3em;
-  margin-left: -3em;
+  margin-left: 1.5em;
 }
 
 .social-icon a {
